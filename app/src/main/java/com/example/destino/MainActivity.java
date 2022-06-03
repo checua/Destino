@@ -35,5 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent ( this, SecundarioActivity.class  );
         intent.putExtra ( "Nombre", nombre );
         startActivity ( intent );
+
     }
 }

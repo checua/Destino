@@ -5,12 +5,26 @@ public class Pagina {
     private String mText; // id del string, creamos ahora la clase ocpión
     private Opcion mOpcion1;
     private Opcion mOpcion2;
+    private boolean mIsFinal = false;
 
     public Pagina(int ImageId, String Text, Opcion Opcion1, Opcion Opcion2) {
         mImageId = ImageId;
         mText = Text;
         mOpcion1 = Opcion1;
         mOpcion2 = Opcion2;
+
+    }
+
+    public boolean isFinal(){ return mIsFinal;}
+    public void setIsFinal(boolean isFinal){mIsFinal = isFinal;}
+
+    public Pagina(int ImageId, String Text) {
+        mImageId = ImageId;
+        mText = Text;
+        mOpcion1 = null;
+        mOpcion2 = null;
+        mIsFinal = true;
+
     }
 
     public int getImageId() {
